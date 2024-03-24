@@ -67,8 +67,8 @@ public static double[] test_method(Solver solver) {
 }
 
     public static void main(String[] args) {
-       double[] avgTimesJacobi= test_method(jacobi::jacobiSolver);; //testing Jacobi
-       double[] avgTimesGaussSeidel =test_method(gaussSeidel::gaussSeidelSolver); // testing gauss seidel
+       double[] avgTimesJacobi= test_method(jacobi::jacobiSolver);; //test Jacobi
+       double[] avgTimesGaussSeidel =test_method(gaussSeidel::gaussSeidelSolver); // test gauss seidel
         Plotter.chart(avgTimesJacobi,avgTimesGaussSeidel,2);
         Plotter.Table(avgTimesJacobi,avgTimesGaussSeidel);
     }
